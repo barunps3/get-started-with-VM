@@ -33,3 +33,5 @@ curl -fsSL https://apt.releases.hashicorp.com/gpg | apt-key add -
 apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
 apt-get update  
 apt-get install terraform
+# Install gcc make and perl before installing virtual guest addition required for host to guest copy paste function
+apt-get install gcc make perl -y
